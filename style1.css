@@ -1,0 +1,33 @@
+@charset "utf-8";
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+	
+}
+
+.gallery {
+    width: 180px;
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+	
+}
+
+.gallery img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+	
+}
+
+.gallery p {
+    color: #702033;
+    font-size: 18px;
+	
+}
+/* CSS Document */
+

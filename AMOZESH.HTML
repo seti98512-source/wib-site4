@@ -1,0 +1,546 @@
+
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: tahoma;
+    font-size: 14px;
+    font-style: normal;
+    direction: rtl;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 340px;
+    background-image: url("Persian Graduation Banner with Floral Elegance.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid #c9a44c;
+    border-radius: 15px;
+	meta name="viewport";
+	content="width=device-width, initial-scale=1.0";
+}
+
+.main {
+    direction: ltr;
+    width: 96%;
+    margin: 5px auto;
+}
+
+.container {
+    display: flex;
+    direction: rtl;
+    gap: 20px;
+    align-items: stretch;
+    width: 98%;
+    margin: 5px auto;
+}
+
+.content {
+    background-color: #AAD3EA;
+    width: 70%;
+    min-height: 1600px;
+    padding: 20px 40px;
+    text-align: right;
+    font-size: 20px;
+    color: #020A6F;
+    border: 2px solid #c9a44c;
+    border-radius: 15px;
+	float: left;
+}
+
+.menu {
+    width: 25%;
+    height: 1600px;
+    padding: 10px;
+    background: #BFE8FA;
+    border: 2px solid #c9a44c;
+    border-radius: 15px;
+    direction: rtl;
+    margin-right: auto;
+	float: right;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-bottom: 8px;
+}
+
+.menu li a {
+    display: block;
+    padding: 14px;
+    background: white;
+    border: 2px solid #c9a44c;
+    border-radius: 12px;
+    text-align: right;
+    text-decoration: none;
+    color: #351b14;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    background: #020A6F;
+    color: white;
+}
+
+a:link,
+a:visited {
+    background-image: linear-gradient(#cacddb, #969eb7);
+    color: #000;
+    padding: 13px 0;
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+a:hover {
+    background-image: linear-gradient(#b0b5c9, #7d87a6);
+    color: #fff;
+}
+
+.contact-box {
+    width: 380px;
+    max-width: 100%;
+    margin: 15px 0 15px auto;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid #c9a44c;
+    border-radius: 15px;
+    text-align: right;
+    direction: rtl;
+    box-sizing: border-box;
+}
+
+.contact-box h2 {
+    color: #110784;
+    text-align: center;
+    font-size: 19px;
+    margin: 5px 0 12px;
+}
+
+.contact-box p {
+    color: #444;
+    font-size: 13px;
+    margin: 4px 0;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 6px;
+    margin: 2px 0;
+    border: 1px solid #c9a44c;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.contact-box textarea {
+    height: 40px;
+}
+
+.contact-box button {
+    background-color: #702033;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 7px 16px;
+    margin-top: 4px;
+}
+
+.site-footer {
+    background-color: #C2DEE7;
+    color: #140575;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 2px;
+    height: 240px;
+    box-sizing: border-box;
+    border: 2px solid #c9a44c;
+    border-radius: 15px;
+}
+
+.site-footer p {
+    margin: 0;
+    padding: 0;
+    line-height: 35px;
+}
+
+.site-footer .footer-title {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.site-footer .footer-author {
+    color: #030B59;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.education-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.edu-card {
+    width: 220px;
+    min-height: 150px;
+    background-color: #e5f3f7;
+    border: 2px solid #4b9bb5;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.edu-card h2 {
+    color: #174b70;
+    font-size: 17px;
+}
+
+.edu-card p {
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.lessons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.lesson-box {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #FBFBFB;
+    border-radius: 12px;
+    border: 1px solid #c9a44c;
+}
+
+.lesson-box h3 {
+    color: #020583;
+    text-align: right;
+}
+
+.lesson-box p {
+    color: #333;
+    text-align: justify;
+    line-height: 2;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    align-items: flex-start;
+}
+
+.menu {
+    order: -1;
+    float: none;
+    width: 29%;
+}
+
+.content {
+    order: 1;
+    float: none;
+    width: 71%;
+}
+/* تنظیم سایت برای موبایل */
+@media screen and (max-width: 768px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 8px;
+        overflow-x: hidden;
+    }
+
+    /* هدر */
+    .header {
+        width: 100%;
+        height: 180px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* محتوای اصلی */
+    .main {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    /* بخش محتوا */
+    .content {
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 15px;
+        font-size: 15px;
+        text-align: right;
+        line-height: 2;
+        margin-bottom: 10px;
+    }
+
+    /* منو */
+    .menu {
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 15px;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    /* لینک های منو */
+    .menu a {
+        display: block;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    /* عکس ها */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* فوتر */
+    .footer {
+        width: 100%;
+        height: auto;
+        min-height: 100px;
+        line-height: 2;
+        margin: 15px auto 0;
+        padding: 15px;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+/* چیدمان کامپیوتر */
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    align-items: flex-start;
+    width: 100%;
+    gap: 15px;
+}
+
+.content {
+    width: 71%;
+    flex: 1;
+    min-width: 0;
+    float: none;
+    order: 1;
+}
+
+.menu {
+    width: 29%;
+    flex-shrink: 0;
+    float: none;
+    position: static;
+    order: 2;
+    direction: rtl;
+}
+
+/* تنظیم موبایل و تبلت */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+        overflow-x: hidden;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .content {
+        width: 100%;
+        flex: none;
+        order: 1;
+    }
+
+    .menu {
+        width: 100%;
+        flex: none;
+        order: 2;
+        position: static;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* گوشی های کوچک */
+
+@media screen and (max-width: 480px) {
+
+    .content,
+    .menu {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .content h2 {
+        font-size: 18px;
+    }
+
+    .menu h2 {
+        font-size: 17px;
+    }
+
+    .menu ul {
+        padding-right: 20px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header"></div>
+
+<div class="container">
+
+    <div class="content">
+        <h2>آموزش</h2>
+        <hr>
+
+        <div class="lessons-container">
+
+            <div class="lesson-box">
+                <h3>۱. اهمیت آموزش و یادگیری</h3>
+                <p>
+                    آموزش و یادگیری یکی از مهم‌ترین عوامل پیشرفت انسان است.
+                    دانش‌آموزان با یادگیری مطالب جدید می‌توانند توانایی‌های خود
+                    را افزایش دهند و برای آینده‌ای بهتر آماده شوند.
+                    تلاش و پشتکار در مسیر یادگیری باعث موفقیت در زندگی می‌شود.
+                </p>
+            </div>
+
+            <div class="lesson-box">
+                <h3>۲. آشنایی با فناوری و کامپیوتر</h3>
+                <p>
+                    امروزه کامپیوتر و فناوری نقش مهمی در زندگی ما دارند.
+                    آشنایی با نرم‌افزارها، اینترنت و مهارت‌های رایانه‌ای
+                    به دانش‌آموزان کمک می‌کند تا در تحصیل و آینده شغلی
+                    خود موفق‌تر باشند.
+                </p>
+            </div>
+
+            <div class="lesson-box">
+                <h3>۳. روش‌های صحیح مطالعه</h3>
+                <p>
+                    برای یادگیری بهتر باید برنامه‌ریزی مناسبی داشته باشیم.
+                    مطالعه در زمان مشخص، مرور درس‌ها، یادداشت‌برداری و
+                    تمرین کردن از روش‌های مفید برای یادگیری بهتر هستند.
+                </p>
+            </div>
+
+            <div class="lesson-box">
+                <h3>۴. خلاقیت و نوآوری</h3>
+                <p>
+                    خلاقیت یعنی پیدا کردن راه‌های تازه برای انجام کارها.
+                    دانش‌آموزان می‌توانند با تمرین، تجربه و ایده‌پردازی
+                    توانایی خلاقانه خود را تقویت کنند و در رشته تحصیلی
+                    خود ایده‌های جدیدی ارائه دهند.
+                </p>
+            </div>
+
+            <div class="lesson-box">
+                <h3>۵. مهارت‌های زندگی و آینده شغلی</h3>
+                <p>
+                    مهارت‌هایی مانند مسئولیت‌پذیری، همکاری، احترام به دیگران
+                    و مدیریت زمان در موفقیت تحصیلی و شغلی اهمیت زیادی دارند.
+                    یادگیری این مهارت‌ها به دانش‌آموزان کمک می‌کند
+                    برای ورود به جامعه و بازار کار آماده شوند.
+                </p>
+            </div>
+
+            <div class="lesson-box">
+                <h3>۶. سخنی با هنرجویان عزیز</h3>
+                <p>
+                    هنرجویان عزیز، آینده شما با تلاش و امید ساخته می‌شود.
+                    به توانایی‌های خود اعتماد داشته باشید، از شکست نترسید
+                    و برای رسیدن به هدف‌های خود تلاش کنید.
+                    هر روز فرصتی تازه برای یادگیری و پیشرفت است.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="menu">
+        <h2>&nbsp;صفحه اصلی</h2>
+        <ul>
+          <li><a href="index.html"> صفحه اصلی</a></li>
+            <li><a href="moarefi.html"> معرفی هنرستان</a></li>
+            <li><a href="reshteh.html"> معرفی رشته‌ها</a></li>
+            <li><a href="galery.html"> گالری تصاویر</a></li>
+            <li><a href="AMOZESH.HTML"> آموزش</a></li>
+            <li><a href="ABOUT.HTML"> تماس با ما</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<footer class="site-footer">
+    <p>هنرستان دخترانه دولتی حیدرعلی حاتمی بن رود</p>
+    <p>آموزش، مهارت‌آموزی و ساختن آینده‌ای بهتر</p>
+    <p class="footer-title">طراحی و توسعه وب‌سایت</p>
+    <p class="footer-author">ستایش باقری</p>
+</footer>
+
+</body>
+</html>

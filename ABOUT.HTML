@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+@charset "utf-8";
+
+body{
+	font-family:tahoma;
+	font-size:14px;
+	font-style:normal;
+	direction:rtl;
+	min-height:100vh;
+	display:flex;
+	flex-direction:column;
+		
+}
+.header{
+	width:100%;
+	height:380px;
+	background-image:url("Persian Graduation Banner with Floral Elegance.png");
+	background-size:cover;
+	background-repeat:no-repeat;
+	 border: 2px solid #c9a44c;
+	 border-radius: 15px;
+	
+}
+.main{
+	dirction:rtl;
+	width:1600px;
+	margin:5px auto;
+}
+.content{
+	background-color:#AAD3EA;
+	width:70%;
+	height:525px;
+	float:left;
+	padding:20px 40px;
+	box-sizing:border-box;
+	text-align:justify;
+	font-size:20px;
+	color:white;
+	 border: 2px solid #c9a44c;
+	 border-radius: 15px;
+	 color:#020A6F;
+}
+.menu{
+
+    width:29%;
+    float:right;
+    background-color:#BFE8FA;
+    height:auto;
+    font-size:17px;
+    border:2px solid #c9a44c;
+    border-radius:15px;
+    color:#020A6F;
+    box-sizing:border-box;
+}
+.footer{
+	width:1600px;
+	height:140px;
+	margin:0 auto;
+	line-height:100px;
+	text-align:center;
+	background-color:#C2DEE7;
+	margin-top:auto;
+	font-size:25px;
+	color:white;
+	 border: 2px solid #c9a44c;
+	 border-radius: 15px;
+	 color:#020A6F;
+}
+ul{
+	list-style:none;
+	padding:0 20px;
+}
+li{
+	margin-top:20px;
+}
+a:link, a:visited{
+	background-imge:linear-gradient(#cacddb,#969eb7);
+	color:#000;
+	padding:13px 0;
+	display:block;
+	text-decoration:none;
+	border-radius:5px;
+	text-align:center;
+}
+a:hover{
+	background-image:linear-gradient(#b0b5c9,#7d87a6);
+	color:#fff;
+}
+.contact-box {
+    width: 380px;
+    max-width: 100%;
+    margin: 15px 0 15px auto;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid #c9a44c;
+    border-radius: 15px;
+    text-align: right;
+    direction: rtl;
+    box-sizing: border-box;
+}
+
+.contact-box h2 {
+    color: #110784;
+    text-align: center;
+    font-size: 19px;
+    margin:5px 0 12px;
+}
+
+.contact-box p {
+    color: #444;
+    font-size: 13px;
+    margin: 4px 0;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 6px;
+    margin: 2px 0;
+    border: 1px solid #c9a44c;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.contact-box textarea {
+    height: 40px;
+}
+
+.contact-box button {
+    background-color: #702033;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 7px 16px;
+    margin-top: 4px;
+}
+.site-footer {
+  background-color: #C2DEE7;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 50px;
+  color: #140575;
+  border: 2px solid #c9a44c;
+  border-radius: 15px;
+}
+
+.site-footer p {
+  margin: 12px 0;
+  font-size: 15px;
+}
+
+.site-footer .footer-title {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.site-footer .footer-author {
+  color: #030B59;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.menu {
+    width:29%;
+    margin-right: auto;
+    padding: 10px;
+    background: #BFE8FA;
+    border: 2px solid #c9a44c;
+    border-radius: 15px;
+    direction: rtl;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-bottom: 8px;
+}
+
+.menu li a {
+    display: block;
+    padding: 14px;
+    background:white ;
+    border: 2px solid #c9a44c;
+    border-radius: 12px;
+    text-align: right;
+    text-decoration: none;
+    color: #351b14;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    background:#020A6F;
+    color: white;
+}
+
+.container {
+    display: flex;
+    direction: rtl;
+    gap: 20px;
+    align-items: stretch;
+    width: 96%;
+    margin: 5px auto;
+}
+
+.site-footer p {
+    margin: 0;
+    padding: 0;
+    line-height: 35px;
+}
+
+.site-footer {
+    margin-top: 2px;
+    height: 240px;
+    box-sizing: border-box;
+}
+/* تنظیم سایت برای موبایل */
+@media screen and (max-width: 768px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 8px;
+        overflow-x: hidden;
+    }
+
+    /* هدر */
+    .header {
+        width: 100%;
+        height: 180px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* محتوای اصلی */
+    .main {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    /* بخش محتوا */
+    .content {
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 15px;
+        font-size: 15px;
+        text-align: right;
+        line-height: 2;
+        margin-bottom: 10px;
+    }
+
+    /* منو */
+    .menu {
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 15px;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    /* لینک های منو */
+    .menu a {
+        display: block;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    /* عکس ها */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* فوتر */
+    .footer {
+        width: 100%;
+        height: auto;
+        min-height: 100px;
+        line-height: 2;
+        margin: 15px auto 0;
+        padding: 15px;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+/* CSS Document */
+
+
+</style>
+</head>
+
+<body>
+
+<div class="header"></div>
+<div class="main">
+<div class="content">
+<h2>تماس با ما  </h2>
+<hr>
+<div class="contact-box">
+
+    <h2>ارتباط با ما</h2>
+	<hr>
+	
+
+    <p>
+        هنرستان حاتمی ورزنه
+        <br>
+        ما همیشه آماده شنیدن نظرات و پیشنهادهای شما هستیم.
+    </p>
+
+    <p>نام و نام خانوادگی:</p>
+    <input type="text" placeholder="نام خود را وارد کنید">
+
+    <p>ایمیل:</p>
+    <input type="email" placeholder="ایمیل خود را وارد کنید">
+
+    <p>پیام شما:</p>
+    <textarea rows="4" placeholder="پیام خود را بنویسید"></textarea>
+
+    <button type="button">ارسال پیام</button>
+
+</div>
+</div>
+<div class="menu">
+    <h2>صفحه اصلی</h2>
+  <ul>
+<li><a href="index.html"> صفحه اصلی</a></li>
+<li><a href="moarefi.html"> معرفی هنرستان</a></li>
+<li><a href="reshteh.html"> معرفی رشته‌ها</a></li>
+<li><a href="galery.html"> گالری تصاویر</a></li>
+<li><a href="AMOZESH.HTML"> آموزش</a></li>
+<li><a href="ABOUT.HTML"> تماس با ما</a></li>
+</ul>
+</div>
+</div>
+<footer class="site-footer">
+    <p>هنرستان دخترانه دولتی حیدرعلی حاتمی بن رود</p>
+    <p>آموزش، مهارت آموزی و ساختن آینده ای بهتر</p>
+    <p class="footer-title">طراحی و توسعه وب سایت</p>
+    <p class="footer-author">ستایش باقری</p>
+</footer>
+</body>
+</html>
